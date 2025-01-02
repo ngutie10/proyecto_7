@@ -23,7 +23,7 @@ data_vehicles.info()
 #fig2=px.bar(data_fuel,x='fuel', y='price')
 #fig2.show()
 
-#st.header('Análisis de datos de vehiculos registrados en U.S.A.')
+st.header('Análisis de datos de vehiculos registrados en U.S.A.')
 
 #st.write(st.session_state['data_vehicles'])
 
@@ -48,3 +48,18 @@ if dis_button:
     fig2= px.scatter(data_vehicles, x='odometer', y='price')
     
     st.plotly_chart(fig2, use_container_width=True)
+
+
+build_histogram = st.checkbox('Construir un histograma')
+
+if build_histogram: # si la casilla de verificación está seleccionada
+    st.write('Construir un histograma para la columna fuel')
+
+    st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
+            
+    # crear un histograma
+    fig3 = px.histogram(data_vehicles, x="fuel")
+
+    st.plotly_chart(fig3, use_container_width=True)
+
+
