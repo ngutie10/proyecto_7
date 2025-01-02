@@ -7,17 +7,17 @@ data_vehicles.info()
 
 #print(data_vehicles.duplicated().sum()) # verifica cuantas filas hay completamente repetidas
 
-data_vehicles['model_year']=data_vehicles['model_year'].fillna('no_year')
+#data_vehicles['model_year']=data_vehicles['model_year'].fillna('no_year')
 
-data_vehicles['cylinders']=data_vehicles['cylinders'].fillna('0')
+#data_vehicles['cylinders']=data_vehicles['cylinders'].fillna('0')
 
-data_vehicles['date_posted']=pd.to_datetime(data_vehicles['date_posted'], format='%Y-%m-%d')
-data_vehicles.info()
+#data_vehicles['date_posted']=pd.to_datetime(data_vehicles['date_posted'], format='%Y-%m-%d')
+#data_vehicles.info()
 
 #fig = px.histogram(data_vehicles, x="odometer") # crear un histograma
 #fig.show()
 
-data_fuel=data_vehicles.groupby('fuel').count().reset_index()
+#data_fuel=data_vehicles.groupby('fuel').count().reset_index()
 #print(data_fuel)
 
 #fig2=px.bar(data_fuel,x='fuel', y='price')
