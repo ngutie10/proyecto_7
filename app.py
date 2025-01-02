@@ -23,9 +23,9 @@ data_vehicles.info()
 #fig2=px.bar(data_fuel,x='fuel', y='price')
 #fig2.show()
 
-st.header('Análisis de datos de vehiculos registrados en U.S.A.')
+#st.header('Análisis de datos de vehiculos registrados en U.S.A.')
 
-st.write(st.session_state['data_vehicles'])
+#st.write(st.session_state['data_vehicles'])
 
 hist_button = st.button('Construir histograma') # crear un botón
         
